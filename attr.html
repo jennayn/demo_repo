@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Attr Method</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="example">
+        <a href="images/Grass.jpg">
+            <img src="images/Grass.jpg" alt="">
+        </a> 
+        <a href="images/Leaf.jpg">
+            <img src="images/Leaf.jpg" alt="">
+        </a>  
+        <a href="images/Spring.jpg">
+            <img src="images/Spring.jpg" alt="">
+        </a>
+        <a href="images/Water.jpg">
+            <img src="images/Water.jpg" alt="">
+        </a>
+    </div>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            // Attr method
+            $("a").attr("title", "Photo by some photographer!")
+            $("a").attr("target", "_blank")
+            $("a").removeAttr("href")
+            $("img").attr({
+                src: "images/Spring.jpg",
+                title: "Spring is here!"
+            })
+        })
+    
+    </script>
+</body>
+</html>

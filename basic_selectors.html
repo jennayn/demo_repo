@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Selectors</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="content">
+        <div id="example">
+            <p class="a">This is paragraph 1</p>
+            <p id="para2">This is paragraph 2</p>
+            <p class="b">This is paragraph 3</p>
+            <p id="para4">This is paragraph 4</p>
+            <p id="para5">This is paragraph 5</p>
+        </div>
+        <div>
+            <button id="create">Create Content</button>
+            <button id="change">Change Content</button>
+            <button id="changeAll">Change All</button>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script>
+        
+        //BASIC SELECTORS
+        // $("p").css("border", "2px solid red")
+        // $(".a").css("border", "2px solid red")
+        // $("p.b").css("border", "2px solid red")
+
+
+        // BASIC FILTERS
+        // $("#example p:first").css("border", "2px solid red")
+        // $("#example p:last").css("border", "2px solid red")
+        // $("#example p:even").css("border", "2px solid red")
+        // $("#example p:odd").css("border", "2px solid red")
+
+        // $("div > p").css("border", "2px solid red")
+
+
+        // ATTRIBUTE FILTERS
+        // $("p[class]").css('border', '2px solid red')
+        // $("p[class=a]").css("border", "2px solid red")
+        // $('p[id^=para]').css('border', '2px solid yellow')
+
+        // $('p:contains(3)').css('border', '3px solid yellow')
+
+
+        // EACH METHOD
+        // var margin = 0
+        // var border = 3
+        // $('#example p').each((index,element) => {
+        //     $(element).css({
+        //         margin: margin,
+        //         border: border + "px solid yellow"
+        //     })
+        //     margin += 10
+        //     border += 2
+        // })
+
+    </script>
+</body>
+</html>
